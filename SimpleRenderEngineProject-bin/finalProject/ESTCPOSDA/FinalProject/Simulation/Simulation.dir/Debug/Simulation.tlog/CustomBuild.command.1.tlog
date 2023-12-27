@@ -1,0 +1,10 @@
+^C:\USERS\HALLU\ONEDRIVE\DOKUMENTER\SKÓLI\GAME PROGRAMMING\ESTCPOCDA\SIMPLERENDERENGINEPROJECT\FINALPROJECT\ESTCPOSDA\FINALPROJECT\SIMULATION\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/hallu/OneDrive/Dokumenter/Skóli/Game Programming/ESTCPOCDA/SimpleRenderEngineProject" "-BC:/Users/hallu/OneDrive/Dokumenter/Skóli/Game Programming/ESTCPOCDA/SimpleRenderEngineProject-bin" --check-stamp-file "C:/Users/hallu/OneDrive/Dokumenter/Skóli/Game Programming/ESTCPOCDA/SimpleRenderEngineProject-bin/finalProject/ESTCPOSDA/FinalProject/Simulation/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
